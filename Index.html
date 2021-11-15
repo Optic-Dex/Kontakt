@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <fieldset id="form-grid">
+            <legend>: Kontakt form :</legend>
+            <div id="form-box1"> 
+                <label for="fname">Fornavn</label>
+                <label for="ename">Efternavn</label>
+                <label for="email">Email</label>
+                <label for="telefon">Telefon Nr</label>
+                <label for="bday">Fødslesdato</label>
+                
+            </div>
+            <div id="form-box2">
+                <input type="text" name="fname" id="fname" placeholder="Indtast fornavn" required>
+                <input type="text" name="ename" id="ename" placeholder="Indtast efternavn" required>
+                <input type="email" name="email" id="email" placeholder="Indtast email" required>
+                <input type="tel" name="telefon" id="telefon" placeholder="Indtast telefon nr" required>
+                <input type="date" name="bday" id="bday" required>
+                
+            </div>
+            <div id="form-box3">
+            <input type="text" name="message" id="message" placeholder="Indtast din besked her" required>
+            <input type="checkbox" id="checkbox" name="checkbox" required><label for="checkbox">Acceptere</label></div>
+            <input type="submit" value="Submit">
+            <input type="submit" value="Clear">
+        </fieldset>
+        </form>
+    </main>
+</body>
+</html>

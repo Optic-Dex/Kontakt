@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=date] {
+  width: 85%;
+  height: 21px;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  border: 2px solid #ffe600;
+}
+
+input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder {
+  color: rgba(255, 230, 0, 0.527);
+  background-color: #9b9b9b;
+  font-size: 1vw;
+}
+
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder {
+  color: rgba(255, 230, 0, 0.527);
+  background-color: #9b9b9b;
+  font-size: 1vw;
+}
+
+input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, input[type=tel]::-ms-input-placeholder {
+  color: rgba(255, 230, 0, 0.527);
+  background-color: #9b9b9b;
+  font-size: 1vw;
+}
+
+input[type=text]::placeholder, input[type=email]::placeholder, input[type=tel]::placeholder {
+  color: rgba(255, 230, 0, 0.527);
+  background-color: #9b9b9b;
+  font-size: 1vw;
+}
+
+#form-grid {
+  max-width: 500px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (minmax(150px, 1fr))[1];
+      grid-template-rows: repeat(1, minmax(150px, 1fr));
+      grid-template-areas: "form-box1 form-box2" "form-box3 form-box3";
+  gap: 1rem;
+}
+
+#form-box1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: form-box1;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#form-box2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: form-box2;
+}
+
+#form-box3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: form-box3;
+  width: 400px;
+  margin: auto;
+}
+
+body {
+  background-color: gray;
+  max-width: 1920px;
+}
+
+main {
+  max-width: 1630px;
+  margin: auto;
+}
+
+label {
+  font-size: 1.5vw;
+  display: block;
+  text-align: end;
+  color: #ffe600;
+}
+
+input {
+  margin-top: 8px;
+}
+
+fieldset {
+  background-color: gray;
+  border: 5px solid #ffe600;
+  border-radius: 15px;
+}
+
+input[type=text] {
+  display: block;
+}
+
+input[type=email] {
+  display: block;
+}
+
+input[type=tel] {
+  display: block;
+}
+
+input[type=date] {
+  display: block;
+  color: rgba(255, 230, 0, 0.527);
+  background-color: #9b9b9b;
+  border: 2px solid #ffe600;
+}
+
+input[type=checkbox] {
+  display: inline;
+  margin: 0 10px;
+}
+
+input[type=submit] {
+  border: 2px solid #ffe600;
+  color: #ffe600;
+  background-color: #9b9b9b;
+  margin: 10px;
+  font-size: 1.3vw;
+}
+
+label[for=checkbox] {
+  display: inline;
+  font-size: 1vw;
+}
+
+legend {
+  color: #ffe600;
+  font-size: 1.3vw;
+}
+
+#message {
+  display: inline;
+  width: 70%;
+}

@@ -1,0 +1,84 @@
+* {
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+}
+@import './helper/variables';
+@import './helper/mixin';
+@import './helper/placeholder';
+@import './helper/extend';
+@import './helper/grid';
+@import './helper/nav';
+@import './helper/footer';
+@import './helper/animation';
+
+body {
+    background-color: gray;
+    max-width: 1920px;
+}
+main {
+    max-width: 1630px;
+    margin: auto;
+}
+label {
+    font-size: 1.5vw;
+    display: block;
+    text-align: end;
+    color: $color-yellow;
+}
+
+input {
+    margin-top: 8px;
+}
+fieldset {
+    background-color: gray;
+    border: 5px solid $color-yellow;
+    border-radius: 15px;
+}
+input[type=text] {
+    display: block;
+   @extend %height_width_inputbox;
+   @extend %placeholder;
+}
+input[type=email] {
+    display: block;
+    @extend %height_width_inputbox;
+    @extend %placeholder;
+}
+input[type=tel] {
+    display: block;
+    @extend %height_width_inputbox;
+    @extend %placeholder;
+}
+input[type=date] {
+    display: block;
+    @extend %height_width_inputbox;
+    color: $color-yellow-op;
+    background-color: rgb(155, 155, 155);
+    border: 2px solid $color-yellow;
+}
+input[type=checkbox] {
+    display: inline;
+    margin:0 10px;
+}
+input[type=submit] {
+    border: 2px solid $color-yellow;
+    color: $color-yellow;
+    background-color: rgb(155, 155, 155);;
+    margin: 10px;
+    font-size: 1.3vw;
+}
+label[for=checkbox] {
+    display: inline;
+    font-size: 1vw;
+}
+legend {
+    color: $color-yellow;
+    font-size: 1.3vw;
+}
+
+#message{
+    display: inline;
+    width: 70%;
+}
